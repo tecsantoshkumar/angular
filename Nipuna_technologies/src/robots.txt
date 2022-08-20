@@ -1,0 +1,3 @@
+Sitemap: https://www.nipunatechnologies.com/sitemap.xml
+User-agent: *
+Allow: /

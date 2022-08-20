@@ -1,0 +1,98 @@
+<div  class="lifetime-area ptb-100 bg-color-f2f7fa" style="background-image: linear-gradient(to right top, #262262, #39498a, #5071b1, #6b9bd7, #8bc7fd);
+">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12">
+                <div class="banner-content">
+                    <span class="top-title">FOR A BETTER FUTURE</span>
+                    <h1>Best Software Training Institute in Guntur With   <span>100%</span> Placement</h1>
+                    <p style="color:#f9e602;">The experience of our instructors benefits your career </p>
+                  
+                    <ul class="popular-courses-tag">
+                        <li>
+                            <span>Popular Courses:</span>
+                        </li>
+                        <li>
+                            <a href="search.html">Java</a>
+                            <a href="search.html">Seo</a>
+                            <a href="search.htmml">Marketing</a>
+                        </li>
+                    </ul>
+                </div>
+             
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="register-now">
+                    <div class="register-title">
+                        <h3>Get in Touch With us</h3>
+                    </div>
+                    <form #ContactForm="ngForm" (ngSubmit)="ContactForm.form.valid && onSubmit()">
+
+                        <div class="form-group">
+                            <input type="text" Placeholder="Name" id="fname1" class="form-control" name="name" data-toggle="tooltip"
+                              autocomplete="off" data-trigger="hover" data-placement="top" data-title="Name"
+                              [(ngModel)]="owner.name" name="name_candidate" #name="ngModel"
+                              [ngClass]="{ 'is-invalid': ContactForm.submitted && name.invalid }" required />
+                            <div *ngIf="ContactForm.submitted && name.invalid" class="invalid-feedback">
+                              <div *ngIf="name?.errors?.required">Name is required</div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="controls">
+                              <input type="text" Placeholder="Email"  id="email" class="form-control"
+                                data-validation-regex-regex="([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})"
+                                data-validation-regex-msg="Enter Valid Email" aria-invalid="false" autocomplete="companyemail"
+                                #email="ngModel" [(ngModel)]="owner.email" name="email"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                                [ngClass]="{ 'is-invalid': ContactForm.submitted && email.invalid }" required />
+                              <div *ngIf="ContactForm.submitted && email.invalid" class="invalid-feedback">
+                                <div *ngIf="email?.errors?.required">Email ID is required</div>
+                                <div *ngIf="email?.errors?.pattern">Email ID is invaild</div>
+                              </div>
+                              <div class="help-block"></div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="controls">
+                              <input type="text" Placeholder="Mobile Number"  id="mobile" class="form-control" required=""
+                                autocomplete="contactNumber" data-validation-containsnumber-regex="(\d)+" pattern="^[6-9]\d{9}$"
+                                data-validation-containsnumber-msg="Please enter a valid mobile number" aria-invalid="false"
+                                [(ngModel)]="owner.mobile" #mobile="ngModel" name="mobile"
+                                pattern="^[6-9]\d{9}$" minlength=10 maxlength=10
+                                [ngClass]="{ 'is-invalid': ContactForm.submitted && mobile.invalid }" required />
+                              <div *ngIf="ContactForm.submitted && mobile.invalid" class="invalid-feedback">
+                                 <div *ngIf="mobile?.errors?.required">Mobile is required</div>
+                                <div *ngIf="mobile?.errors?.pattern">Mobile Number is invalid</div> 
+              
+                              </div>
+                              <div class="help-block"></div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <input type="text" Placeholder="course" id="fname1" class="form-control" name="course" data-toggle="tooltip"
+                              autocomplete="off" data-trigger="hover" data-placement="top" data-title="Name"
+                              [(ngModel)]="owner.course" name="course" #course="ngModel"
+                              [ngClass]="{ 'is-invalid': ContactForm.submitted && course.invalid }" required />
+                            <div *ngIf="ContactForm.submitted && course.invalid" class="invalid-feedback">
+                              <div *ngIf="course?.errors?.required">Course is required</div>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                        
+                            <textarea Placeholder="Message" type="text" id="msg" class="form-control" name="msg" data-toggle="tooltip"
+                            autocomplete="off" data-trigger="hover" data-placement="top" data-title="Name"
+                            [(ngModel)]="owner.msg" name="msg" #msg="ngModel"
+                            [ngClass]="{ 'is-invalid': ContactForm.submitted && msg.invalid }" required >
+                     </textarea>
+                        <div *ngIf="ContactForm.submitted && msg.invalid" class="invalid-feedback">
+                            <div *ngIf="msg?.errors?.required">Message is required</div>
+                          </div>
+                        </div>
+                        <button type="submit" class="default-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<app-navbar></app-navbar>
+
+<!-- Page Banner -->
+<div class="" style="padding-top: 50px;padding-bottom:50px;background-color: aliceblue;" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="section-title text-left" >
+                    <!-- <span>Get In Touch</span> -->
+       </div> <!-- section title -->
+                <div class="form-area"  >
+                  
+                    <form    #loginForm="ngForm" (ngSubmit)="loginForm.form.valid && onSubmit()" >
+                        
+                        
+                        <div class="input-box pt-25">
+                            <div class="form-group">
+                                <label class="hh" for="exampleInputEmail1">Username</label><br/>
+                            <input type="text" class="form-control"  #email="ngModel" name="email" placeholder="email"
+                            [(ngModel)]="owner.email" [ngClass]="{ 'is-invalid': loginForm.submitted && email.invalid }" maxlength="35"  required>
+                            <div *ngIf="loginForm.submitted && email.invalid"  class="invalid-feedback">
+                                <div *ngIf="email?.errors?.required">username is required</div>
+                              </div>  
+                        </div>
+                        </div>
+                        <div class="input-box mt-20">
+                  
+                        <div class="form-group">
+                            <label class="hh" for="exampleInputPassword1">Password</label><br/>
+                            <input  autocomplete="disabled" value="" class="form-control pwdCls" [type]="passwordType"  placeholder="Password" #password="ngModel"
+                            [(ngModel)]="owner.password" name="password" type="password"    [ngClass]="{ 'is-invalid': loginForm.submitted && password.invalid }"
+                            minlength="4" maxlength="25"
+                            required  >
+                            <a  class="faeye-icon field-icon">  <i  class="fa fa-eye" type="button" (click)="passwords()" *ngIf="passwordshown"></i>
+                              <i class="fa fa-eye-slash" type="button" (click)="passwords()" *ngIf="!passwordshown"></i>
+                           </a> 
+                            <div *ngIf="loginForm.submitted && password.invalid" class="invalid-feedback">
+                                <div *ngIf="password?.errors?.required">Password is required</div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="input-box mt-20">
+                            <button   class="btn btn-primary move wow fadeInRight" data-wow-duration="2s"  type="submit" style="margin-top: 15px;"> <i class="fa fa-spinner fa-spin" *ngIf="loading"></i>Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6" style="padding-top: 37px;">
+            <img src="../../../../assets/images/banner/banner-img.webp">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

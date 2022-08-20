@@ -1,0 +1,23 @@
+
+
+<body style="margin-top: 15px;">
+    <p-table [columns]="cols" [value]="apiresponse"  [paginator]="true" [rows]="10"
+    [showCurrentPageReport]="true" [responsive]="true" [scrollable]="true" scrollHeight="calc(100vh - 100px)">
+        <ng-template pTemplate="header" let-columns>
+            <tr>
+                <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+                    {{col.header}}
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-columns="columns">
+            <tr>
+                <td *ngFor="let col of columns">
+                        {{rowData|field:col}}
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+    
+</body>
+ 

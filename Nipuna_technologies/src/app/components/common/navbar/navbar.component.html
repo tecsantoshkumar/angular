@@ -1,0 +1,533 @@
+<header class="header-area">
+
+        <!-- Top Header -->
+        <div class="top-header"
+                [ngClass]="{'style-two' : router?.url === '/index-3', 'bg-color' : router?.url === '/index-2'}">
+                <div class="container">
+                        <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-6">
+                                        <ul class="header-left-content">
+                                                <li>
+                                                        <a href="tel:+917997927111">
+                                                                <i class="ri-phone-fill"></i>
+                                                                +91 7997927111
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="admin@nipunatechnologies.com">
+                                                                <i class="ri-mail-fill"></i>
+                                                                admin@nipunatechnologies.com
+                                                        </a>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                        <div
+                                                class="d-flex justify-content-between align-items-center breaking-news bg-white">
+                                                <marquee class="news-scroll" behavior="scroll" direction="left"
+                                                        onmouseover="this.stop();" onmouseout="this.start();"> <a
+                                                                href="#">summer batches coming soon </a> <span
+                                                                class="dot"></span> <a href="#">Core Java , Advaced
+                                                                Java, HTML , CSS3 , Bootstrap </a>
+                                                        <span class="dot"></span> <a href="#">Improve your Knowledge &
+                                                                Intelligence with Nipuna
+                                                                Technologies </a>
+                                                </marquee>
+                                        </div>
+
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="navbar-area" stickyClass="sticky-box-shadow" ngStickyNav
+                [ngClass]="{'bg-color-f5f1ee' : router?.url === '/index-3'}">
+                <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-light" [class.active]="classApplied">
+                                <a class="navbar-brand" routerLink="/"><img title="logo" src="../../../../assets/images/logo.png"
+                                                alt="logo"></a>
+                                <button class="navbar-toggler" aria-hidden="true" type="button" (click)="toggleClass()">
+                                        <span class="burger-menu">
+                                                <span class="top-bar"></span>
+                                                <span class="middle-bar"></span>
+                                                <span class="bottom-bar"></span>
+                                        </span>
+                                </button>
+                                <div class="collapse navbar-collapse">
+                                        <ul class="navbar-nav m-auto">
+                                                <li class="nav-item"><a routerLink="/" class="nav-link"
+                                                                routerLinkActive="active"
+                                                                [routerLinkActiveOptions]="{exact: true}">HOME</a></li>
+
+
+
+                                                <li class="nav-item mega-menu">
+
+                                                        <a routerLink="/ITCourses/it-courses-training-institute-guntur"
+                                                                routerLinkActive="active"
+                                                                [routerLinkActiveOptions]="{exact: true}"
+                                                                class="nav-link dropdown-toggle">IT
+                                                                COURSES <i class="ri-arrow-down-s-line"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                                <li class="nav-item">
+                                                                        <div class="row">
+                                                                                <div class="col">
+                                                                                        <ul class="sub-menu">
+                                                                                                <li><a routerLink="/ITCourses/c-language-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">C
+                                                                                                                Language</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/c++-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">C++</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/php-mysql-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Php
+                                                                                                                Mysql</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/webdesign-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Web
+                                                                                                                Technologies</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/java-fullstack-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Java
+                                                                                                                FullStack</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/core-java-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Core
+                                                                                                                Java</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/advanced-java-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Advanced
+                                                                                                                Java</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/dot-net-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Dot
+                                                                                                                Net</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/oracle-sql-plsql-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Oracle
+                                                                                                                Sql/Plsql</a>
+                                                                                                </li>
+
+                                                                                        </ul>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                        <!-- <h6 class="sub-menu-title">Pages II</h6> -->
+                                                                                        <ul class="sub-menu">
+                                                                                                <li><a routerLink="/ITCourses/devops-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Devops</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/tableau-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Tableau</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/power-bi-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Power
+                                                                                                                Bi</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/mule-soft-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">MuleSoft</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/aws-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">AWS</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/microsoft-azure-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Microsoft
+                                                                                                                Azure</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/gcp-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">GCP</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/angular-js-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Angular
+                                                                                                                Js</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/Android-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Android</a>
+                                                                                                </li>
+
+                                                                                        </ul>
+                                                                                </div>
+                                                                                <div class="col">
+
+                                                                                        <ul class="sub-menu">
+                                                                                                <li><a routerLink="/ITCourses/msoffice-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Ms
+                                                                                                                Office</a>
+                                                                                                </li>
+
+                                                                                                <li><a routerLink="/ITCourses/react-js-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">React
+                                                                                                                Js</a>
+                                                                                                </li>
+
+                                                                                                <li><a routerLink="/tally-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Tally
+                                                                                                                with
+                                                                                                                GST</a>
+                                                                                                </li>
+
+
+                                                                                                <li><a routerLink="/ITCourses/datascience-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Data
+                                                                                                                Science</a>
+                                                                                                </li>
+
+                                                                                                <li class="sub-menu-title"> <a routerLink="/ITCourses/Python-training-institute-guntur"
+                                                                                                        routerLinkActive="active"
+                                                                                                        [routerLinkActiveOptions]="{exact: true}" style="color:red !important;">
+                                                                                                        PYTHON FULL STACK </a> </li>
+
+                                                                                                <li><a routerLink="/ITCourses/python-with-coreandadvance"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Python
+                                                                                                                Core &
+                                                                                                                Advanced</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/Python-with-Django-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Python
+                                                                                                                with
+                                                                                                                Django</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/Python-with-machine-learning-datascience"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Python
+                                                                                                                with ML
+                                                                                                                & Data
+                                                                                                                Science</a>
+                                                                                                </li>
+
+                                                                                                <!--<li><a routerLink="/event-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">SMM</a></li> -->
+
+                                                                                        </ul>
+                                                                                </div>
+                                                                                <div class="col">
+
+                                                                                        <ul class="sub-menu">
+
+
+                                                                                                <h6 class="sub-menu-title" style="color:red !important;">TESTING</h6>
+
+                                                                                                <li><a routerLink="/ITCourses/ManualTesting-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Manual
+                                                                                                                Testing</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/ITCourses/automation-testing-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Automation
+                                                                                                                Testing</a>
+                                                                                                </li>
+                                                                                       
+
+
+                                                                                        
+
+
+                                                                                                <li class="sub-menu-title">
+                                                                                                        <a routerLink="/MultiMedia/multimedia-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}" style="color:red !important;">
+
+                                                                                                                MULTIMEDIA
+                                                                                                        </a>
+                                                                                                </li>
+
+                                                                                                <li><a routerLink="/MultiMedia/photoshop-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Photoshop</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/MultiMedia/Graphicdesigning-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">Graphic
+                                                                                                                Designing</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/MultiMedia/Dtp-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">DTP</a>
+                                                                                                </li>
+                                                                                                <li><a routerLink="/MultiMedia/3dsmax-training-institute-guntur"
+                                                                                                                routerLinkActive="active"
+                                                                                                                [routerLinkActiveOptions]="{exact: true}">3Ds
+                                                                                                                MAX</a>
+                                                                                                </li>
+                                                                                                
+
+
+                                                                                        </ul>
+                                                                                </div>
+
+                                                                                <div class="col">
+
+                                                        <ul class="sub-menu">
+
+                                                                <li><a routerLink="/MultiMedia/Vfx-training-institute-guntur"
+                                                                        routerLinkActive="active"
+                                                                        [routerLinkActiveOptions]="{exact: true}">VFX</a>
+                                                        </li>
+
+                                                                <li><a routerLink="/MultiMedia/3d-maya-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}">MAYA</a>
+                                                                </li>
+
+                                                                <li class="sub-menu-title"> <a
+                                                                                routerLink="/Networking/computer-networking-courses-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}" style="color:red !important;">
+                                                                               COMPUTER NETWORKING COURSES </a>
+                                                                </li>
+
+                                                                
+
+                                                                        <li><a routerLink="/Networking/hardware-and-networking-training-institute-guntur"
+                                                                                        routerLinkActive="active"
+                                                                                        [routerLinkActiveOptions]="{exact: true}">H
+                                                                                        & N</a></li>
+
+                                                                        <!---- <li><a routerLink="/" routerLinkActive="active"
+                                                                                        [routerLinkActiveOptions]="{exact: true}">CISCO</a>
+                                                                        </li>-->
+
+                                                                        <li><a routerLink="/Networking/ccna-training-institute-guntur"
+                                                                                        routerLinkActive="active"
+                                                                                        [routerLinkActiveOptions]="{exact: true}">CCNA</a>
+                                                                        </li>
+
+                                                                        <!--<li><a routerLink="/" routerLinkActive="active"
+                                                                                        [routerLinkActiveOptions]="{exact: true}">MCITP</a>
+                                                                        </li>-->
+
+                                                                        <li><a routerLink="/Networking/linux-training-institute-guntur"
+                                                                                        routerLinkActive="active"
+                                                                                        [routerLinkActiveOptions]="{exact: true}">LINUX</a>
+                                                                        </li>
+                                                                        <h6 class="sub-menu-title" style="color:red !important;">OTHERS</h6>
+                                                                        <li><a routerLink="/spoken-english-training-institute-guntur"
+                                                                                        routerLinkActive="active"
+                                                                                        [routerLinkActiveOptions]="{exact: true}">Spoken
+                                                                                        English</a></li>
+
+                                                                </ul>
+                                </div>
+                </div>
+                </li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                        <a routerLink="/DigitalMarketing/digital-marketing-training-institute-guntur"
+                                routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                                class="nav-link dropdown-toggle">DIGITAL MARETING
+                                <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="dropdown-menu">
+                                <li><a routerLink="/DigitalMarketing/wordpress-training-institute-guntur"
+                                                routerLinkActive="active"
+                                                [routerLinkActiveOptions]="{exact: true}">Wordpress</a></li>
+                                <li><a routerLink="/DigitalMarketing/Seo-training-institute-guntur"
+                                                routerLinkActive="active"
+                                                [routerLinkActiveOptions]="{exact: true}">SEO</a></li>
+                                <li><a routerLink="/DigitalMarketing/Sem-training-institute-guntur"
+                                                routerLinkActive="active"
+                                                [routerLinkActiveOptions]="{exact: true}">SEM(Google ADs Course)</a>
+                                </li>
+                                <li><a routerLink="/DigitalMarketing/facebook-marketing-training-institute-guntur"
+                                                routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">SMO
+                                                & SMM</a></li>
+
+                        </ul>
+                </li>
+
+                <li class="nav-item mega-menu">
+                        <a routerLink="/CADCourses/cad-courses-training-institute-guntur" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{exact: true}" class="nav-link dropdown-toggle"> CAD
+                                COURSES<i class="ri-arrow-down-s-line"></i></a>
+
+
+                        <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                        <div class="row">
+
+
+                                                <div class="col">
+
+
+                                                        <ul class="sub-menu">
+
+                                                        <li class="sub-menu-title"> 
+                                                                
+                                                                <a routerLink="/CADCourses/Autocad-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}" style="color:red !important;font-size:15px;">AutoCad
+                                                                                Civil Courses</a></li>
+                                                       
+
+                                                                
+
+                                                                <li><a routerLink="/CADCourses/autocad-civil-3d-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}">Civil
+                                                                                3D</a></li>
+
+                                                                <li><a routerLink="/CADCourses/etabs-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}">Etabs</a>
+                                                                </li>
+
+                                                                <li><a routerLink="/CADCourses/sketch-up-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}">Sketch-up</a>
+                                                                </li>
+
+
+
+
+                                                        </ul>
+                                                </div>
+
+
+
+
+                                                <div class="col">
+
+
+                                                        <ul class="sub-menu">
+                                                                <li><a routerLink="/CADCourses/mx-road-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}">MX-
+                                                                                Road</a>
+                                                                </li>
+                                                                <li><a routerLink="/CADCourses/staddpro-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}">Stadd
+                                                                                Pro</a>
+                                                                </li>
+                                                                <li><a routerLink="/CADCourses/autocad-3dsmax-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}">3Ds
+                                                                                Max</a></li>
+                                                                <li><a routerLink="/CADCourses/revit-architechure-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}">Revit
+                                                                                Architechure</a></li>
+                                                        </ul>
+
+
+
+                                                </div>
+
+
+
+                                                <div class="col">
+
+                                                        <ul class="sub-menu">
+                                                        
+                                                        <li class="sub-menu-title"> 
+                                                                
+                                                                <a routerLink="/CADCourses/autocad-mechanical-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}" style="color:red !important;font-size:15px;">AutoCad
+                                                                               Mechanical Courses</a></li>
+
+                                                       
+                                                                <li><a routerLink="/CADCourses/unigraphics-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}">UniGraphics</a>
+                                                                </li>
+
+                                                                <li><a routerLink="/CADCourses/solidworks-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}">Solid
+                                                                                Works</a></li>
+
+                                                                <li><a routerLink="/CADCourses/autocad-mechanical-3dprinting-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}">3D
+                                                                                Printing</a>
+                                                                </li>
+
+                                                                
+
+                                                        </ul>
+
+
+
+                                                </div>
+
+
+
+
+                                                <div class="col">
+
+
+                                                        <ul class="sub-menu">
+
+
+                                                                <li><a routerLink="/CADCourses/ansys-training-institute-guntur"
+                                                                        routerLinkActive="active"
+                                                                        [routerLinkActiveOptions]="{exact: true}">Ansys</a>
+                                                        </li>
+
+                                                                <li><a routerLink="/CADCourses/cnc-machine-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}">CNC</a>
+                                                                </li>
+
+                                                                <li><a routerLink="/CADCourses/creo-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}">
+                                                                                CREO</a></li>
+                                                                
+                                                                <li><a routerLink="/CADCourses/catia-training-institute-guntur"
+                                                                                routerLinkActive="active"
+                                                                                [routerLinkActiveOptions]="{exact: true}">
+                                                                                Catia </a>
+                                                                </li>
+                                                        </ul>
+
+
+
+                                                </div>
+
+                                        </div>
+                                </li>
+                        </ul>
+                </li>
+
+                <li class="nav-item">
+                        <a routerLink="/blog" class="nav-link" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{exact: true}">BLOG</a>
+
+                </li>
+                <li class="nav-item"><a routerLink="/contact" class="nav-link" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{exact: true}">CONTACT</a></li>
+                </ul>
+
+        </div>
+        </nav>
+        </div>
+        </div>
+
+</header>

@@ -1,0 +1,38 @@
+.form-area {
+    max-width: 342px;
+    margin: 0 auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 44px 28px 36px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding-top: 20px;
+  }
+
+  .btn-primary {
+    padding: 8px 36px;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: #2874a6;
+    border-color: transparent;
+    margin-top: 15px;
+  }
+  .btn-primary:hover {
+    background-color: #1e577d;
+    border-color: transparent;
+  }
+
+  .field-icon {
+    float: right;
+    margin-right: 12px;
+    margin-top: -29px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .input-box{
+	  padding-top: 25px;
+  }
+
+.hh{
+	padding-bottom: 15px;
+}

@@ -1,0 +1,5 @@
+AUTO_INCREMENT code
+ALTER TABLE tablename AUTO_INCREMENT = 1;
+
+source dist 
+https://coryrylan.com/blog/measuring-angular-performance-with-source-map-explorer

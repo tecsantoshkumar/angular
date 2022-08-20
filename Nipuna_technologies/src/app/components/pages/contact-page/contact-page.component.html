@@ -1,0 +1,162 @@
+<app-navbar></app-navbar>
+<head>
+    <title>ahsgdajshgdjh</title>
+</head>
+<!-- Page Banner -->
+<div class="page-banner-area ptb-100">
+    <div class="container">
+        <div class="page-content">
+            <h1>If You Do Not Find What You Are Looking For Then Contact Us</h1>
+            <ul class="pages-link">
+                 <li><a routerLink="/">Home</a></li>
+                <li class="active">Contact</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Info -->
+<div class="contact-info-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <div class="contact-info-content">
+                    <h2>Get In Touch With Us</h2>
+                    <ul>
+                        <li>
+                            <i class="ri-map-pin-fill"></i>
+                            <h3>Our Address</h3>
+                            
+                            Door No : 6-4-35, 1st Floor, 4/1 Arundelpet, Opposite Sai Grand, Guntur, Andhra Pradesh 522002
+                        </li>
+                        <li>
+                            <i class="ri-phone-fill"></i>
+                            <h3>Contact</h3>
+                            <a href="tel:+9179979 27111">+9179979 27111</a>
+                            <!-- <a href="tel:+1(135)-1207-0507">+1(135) 1207 0507</a> -->
+                        </li>
+                        <li>
+                            <i class="ri-mail-fill"></i>
+                            <h3>Email</h3>
+                            <a href="mailto:admin@
+                            nipunatechnologies.com">admin@
+                                nipunatechnologies.com</a>
+                            <!-- <a href="mailto:info@edon.com">info@edon.com</a> -->
+                        </li>
+                        <li>
+                            <i class="ri-time-fill"></i>
+                            <h3>Hours of Operation</h3>
+                            (7 AM - 10 PM, Monday - Sunday)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3829.422615076681!2d80.4378990148764!3d16.301336537505595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a7521c601ef99%3A0xa70a97b0a0c7c39!2sNipuna%20Technologies!5e0!3m2!1sen!2sin!4v1648441223969!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact -->
+<div class="contact-area pb-100">
+    <div class="container">
+        <div class="section-title">
+            <h2>Ready to Get Started?</h2>
+        </div>
+        <div class="contact-form main-contact-form">
+            <form #ContactForm="ngForm" (ngSubmit)="ContactForm.form.valid && onSubmit()">
+
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="fname1" class="label_style"> Name</label>
+                            <input type="text" id="fname1" class="form-control" name="name_contactus" data-toggle="tooltip"
+                              autocomplete="off" data-trigger="hover" data-placement="top" data-title="Name"
+                              [(ngModel)]="owner.name_contactus" name="name_candidate" #name_contactus="ngModel"
+                              [ngClass]="{ 'is-invalid': ContactForm.submitted && name_contactus.invalid }" required />
+                            <div *ngIf="ContactForm.submitted && name_contactus.invalid" class="invalid-feedback">
+                              <div *ngIf="name_contactus?.errors?.required">Name is required</div>
+                            </div>
+                          </div>
+                 
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="email" class="label_style"> Email</label>
+                            <div class="controls">
+                              <input type="text" id="email_contactus" class="form-control"
+                                data-validation-regex-regex="([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})"
+                                data-validation-regex-message="Enter Valid Email" aria-invalid="false" autocomplete="companyemail"
+                                #email_contactus="ngModel" [(ngModel)]="owner.email_contactus" name="email_contactus"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                                [ngClass]="{ 'is-invalid': ContactForm.submitted && email_contactus.invalid }" required />
+                              <div *ngIf="ContactForm.submitted && email_contactus.invalid" class="invalid-feedback">
+                                <div *ngIf="email_contactus?.errors?.required">Email ID is required</div>
+                                <div *ngIf="email_contactus?.errors?.pattern">Email ID is invaild</div>
+                              </div>
+                              <div class="help-block"></div>
+                            </div>
+                          </div>
+                      
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="mobile" class="label_style">Mobile Number</label>
+                            <div class="controls">
+                              <input type="text"  id="mobile_contactus" class="form-control" required=""
+                                autocomplete="contactNumber" data-validation-containsnumber-regex="(\d)+" pattern="^[6-9]\d{9}$"
+                                data-validation-containsnumber-message="Please enter a valid mobile number" aria-invalid="false"
+                                [(ngModel)]="owner.mobile_contactus" #mobile_contactus="ngModel" name="mobile_contactus"
+                                pattern="^[6-9]\d{9}$" minlength=10 maxlength=10
+                                [ngClass]="{ 'is-invalid': ContactForm.submitted && mobile_contactus.invalid }" required />
+                              <div *ngIf="ContactForm.submitted && mobile_contactus.invalid" class="invalid-feedback">
+                                 <div *ngIf="mobile_contactus?.errors?.required">Mobile is required</div>
+                                <div *ngIf="mobile_contactus?.errors?.pattern">Mobile Number is invalid</div> 
+              
+                              </div>
+                              <div class="help-block"></div>
+                            </div>
+                          </div>
+                      
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="fname1" class="label_style"> Course</label>
+                            <input type="text" id="fname1" class="form-control" name="Course" data-toggle="tooltip"
+                              autocomplete="off" data-trigger="hover" data-placement="top" data-title="Name"
+                              [(ngModel)]="owner.Course" name="Course" #Course="ngModel"
+                              [ngClass]="{ 'is-invalid': ContactForm.submitted && Course.invalid }" required />
+                            <div *ngIf="ContactForm.submitted && Course.invalid" class="invalid-feedback">
+                              <div *ngIf="Course?.errors?.required">Course is required</div>
+                            </div>
+                          </div>
+                    </div>
+               
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea type="text" id="fname1" class="form-control" name="Course" data-toggle="tooltip"
+                            autocomplete="off" data-trigger="hover" data-placement="top" data-title="Name"
+                            [(ngModel)]="owner.Message" name="Course" #Message="ngModel"
+                            [ngClass]="{ 'is-invalid': ContactForm.submitted && Message.invalid }" required >
+                           
+
+                        </textarea>
+                        <div *ngIf="ContactForm.submitted && Course.invalid" class="invalid-feedback">
+                            <div *ngIf="Message?.errors?.required">Message is required</div>
+                          </div>
+                        </div>
+                    </div>
+                 
+                    <div class="col-lg-12 col-md-12">
+                        <button type="submit" class="default-btn">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
